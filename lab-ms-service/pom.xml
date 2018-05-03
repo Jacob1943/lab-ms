@@ -52,6 +52,11 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>me.ye</groupId>
+			<artifactId>lab-ms-model</artifactId>
+			<version>0.0.1</version>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
