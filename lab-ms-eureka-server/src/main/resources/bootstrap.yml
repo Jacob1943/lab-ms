@@ -1,8 +1,8 @@
-spring:
-  application:
-    name: eureka-server
 server:
   port: 8001
+spring:
+  application:
+    name: lab-ms-eureka-server
 eureka:
   client:
     register-with-eureka: false

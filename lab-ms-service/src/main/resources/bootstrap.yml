@@ -1,0 +1,17 @@
+server:
+  port: 8002
+  servlet:
+    context-path: /service/api
+spring:
+  application:
+    name: lab-ms-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: student
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
