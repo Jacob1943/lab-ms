@@ -15,7 +15,7 @@ import java.util.Date;
  */
 
 @Data
-public class BaseEntity implements Serializable {
+public class BaseEntity {
 
     @JsonIgnore
     @Version

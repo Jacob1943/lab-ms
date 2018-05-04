@@ -1,6 +1,8 @@
 package me.ye.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import me.ye.common.BaseEntity;
 import org.springframework.data.annotation.Id;
 
 /**
@@ -9,7 +11,8 @@ import org.springframework.data.annotation.Id;
  */
 
 @Data
-public class School {
+@EqualsAndHashCode(callSuper = true)
+public class School extends BaseEntity {
 
     @Id
     private String id;
