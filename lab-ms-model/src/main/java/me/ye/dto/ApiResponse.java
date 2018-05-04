@@ -13,6 +13,7 @@ import me.ye.constant.ApiResponseStatus;
 
 
 @Data
+@AllArgsConstructor
 @JsonInclude(Include.NON_NULL)
 public class ApiResponse {
 
