@@ -2,6 +2,8 @@ package me.ye.labmsservice.service;
 
 import me.ye.entity.Student;
 
+import java.util.List;
+
 /**
  * @author Jacob
  * @date 03/05/2018
@@ -24,4 +26,7 @@ public interface StudentService {
      * @return Student
      */
     Student findById(String id);
+
+
+    List<Student> findAll();
 }

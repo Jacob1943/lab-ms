@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -33,5 +34,10 @@ public class StudentServiceImpl implements StudentService {
         Optional<Student> optional = studentRepository.findById(id);
         return optional.orElse(null);
 
+    }
+
+    @Override
+    public List<Student> findAll() {
+        return studentRepository.findAll();
     }
 }

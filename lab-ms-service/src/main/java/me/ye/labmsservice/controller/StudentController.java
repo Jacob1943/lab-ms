@@ -7,10 +7,9 @@ import me.ye.labmsservice.service.StudentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * @author Jacob
@@ -39,5 +38,12 @@ public class StudentController {
         Student savedStudent = studentService.newStudent(student);
         return new ApiResponse(ApiResponseStatus.SUCCESS,
                 "new student saved successfully", savedStudent);
+    }
+
+    @GetMapping
+    public ApiResponse findAll() {
+        List<Student> students = studentService.findAll();
+        return new ApiResponse(ApiResponseStatus.SUCCESS,
+                "fetch all students successfully", students);
     }
 }
