@@ -1,0 +1,14 @@
+server:
+  servlet:
+    context-path: /ms/api
+  port: 8003
+spring:
+  application:
+    name: lab-ms-api
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+  instance:
+    prefer-ip-address: true
+
