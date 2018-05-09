@@ -44,6 +44,11 @@
 			<version>0.0.1</version>
 		</dependency>
 		<dependency>
+			<groupId>me.ye</groupId>
+			<artifactId>lab-ms-common-config</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
