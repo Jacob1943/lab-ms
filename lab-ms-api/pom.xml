@@ -45,7 +45,7 @@
 		</dependency>
 		<dependency>
 			<groupId>me.ye</groupId>
-			<artifactId>lab-ms-common-config</artifactId>
+			<artifactId>lab-ms-common-support</artifactId>
 			<version>0.0.1</version>
 		</dependency>
 		<dependency>

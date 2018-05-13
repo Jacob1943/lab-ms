@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>me.ye</groupId>
-	<artifactId>lab-ms-common-config</artifactId>
+	<artifactId>lab-ms-common-support</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
-	<name>lab-ms-common-config</name>
-	<description>common java config</description>
+	<name>lab-ms-common-support</name>
+	<description>common support</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
