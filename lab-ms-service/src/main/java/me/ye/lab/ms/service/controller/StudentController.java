@@ -39,7 +39,7 @@ public class StudentController {
                     HttpStatus.BAD_REQUEST);
         }
         Student savedStudent = studentService.newStudent(student);
-        return new ResponseEntity<>(savedStudent, HttpStatus.OK);
+        return new ResponseEntity<>(savedStudent, HttpStatus.CREATED);
     }
 
     @GetMapping
