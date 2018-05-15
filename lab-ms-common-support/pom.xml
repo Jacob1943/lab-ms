@@ -39,6 +39,15 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.8.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>me.ye</groupId>
+			<artifactId>lab-ms-model</artifactId>
+			<version>0.0.1</version>
+		</dependency>
 
 	</dependencies>
 

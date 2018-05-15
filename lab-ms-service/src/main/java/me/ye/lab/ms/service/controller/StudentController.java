@@ -1,7 +1,9 @@
 package me.ye.lab.ms.service.controller;
 
 
+import me.ye.lab.ms.common.service.SequenceGenerator;
 import me.ye.lab.ms.service.service.StudentService;
+import me.ye.model.constant.SequenceCode;
 import me.ye.model.dto.ErrorResponse;
 import me.ye.model.entity.Student;
 import org.slf4j.Logger;
@@ -28,6 +30,9 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
+    @Autowired
+    private SequenceGenerator sequenceGenerator;
+
 
     @PostMapping
     public ResponseEntity<Object> newStudent(@RequestBody Student student) {
@@ -38,6 +43,7 @@ public class StudentController {
                     new ErrorResponse(HttpStatus.BAD_REQUEST.value(), "student unsaved should not have id"),
                     HttpStatus.BAD_REQUEST);
         }
+        student.setId(sequenceGenerator.getNextSequence(SequenceCode.STUDENT_SEQ));
         Student savedStudent = studentService.newStudent(student);
         return new ResponseEntity<>(savedStudent, HttpStatus.CREATED);
     }
