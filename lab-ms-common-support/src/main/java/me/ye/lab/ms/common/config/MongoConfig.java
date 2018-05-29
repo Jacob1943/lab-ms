@@ -34,7 +34,7 @@ public class MongoConfig extends AbstractMongoConfiguration {
     }
 
     @Bean
-    public MongoOperations mongoOperations() {
-        return new MongoTemplate(mongoDbFactory());
+    public MongoOperations mongoOperations() throws Exception {
+        return mongoTemplate();
     }
 }
